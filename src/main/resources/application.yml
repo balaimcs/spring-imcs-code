@@ -1,0 +1,18 @@
+spring:
+  datasource: 
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mandarina
+    username: jorge
+    password: jorge123
+  jpa:
+    hibernate.ddl-auto: create
+    generate-ddl: true
+    show-sql: true
+  
+#hibernate.ddl-auto  
+#validate: validate the schema, makes no changes to the database.
+#update: update the schema.
+#create: creates the schema, destroying previous data.
+#create-drop: drop the schema when the SessionFactory is closed explicitly, typically when the application is stopped.
+#none: does nothing with the schema, makes no changes to the database
+    
