@@ -22,31 +22,39 @@ public class EventsEntity {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long eventId;
+	private String university;
 	private String photoUrl;
 	private String disclaimer;
 	private String termsAndConditions;
 	private String business;
-
+	
 	//@OneToMany(mappedBy="event", cascade=CascadeType.ALL, orphanRemoval = true, fetch=FetchType.LAZY)
-//	@JoinTable(
-//    name = "event_user",
-//    joinColumns = @JoinColumn(
-//            name = "event_id",
-//            referencedColumnName = "eventId"
-//    ),
-//    inverseJoinColumns = @JoinColumn(
-//            name = "user_id",
-//            referencedColumnName = "userId"
-//    )
-//  )
+	//	@JoinTable(
+	//    name = "event_user",
+	//    joinColumns = @JoinColumn(
+	//            name = "event_id",
+	//            referencedColumnName = "eventId"
+	//    ),
+	//    inverseJoinColumns = @JoinColumn(
+	//            name = "user_id",
+	//            referencedColumnName = "userId"
+	//    )
+	//  )
 	//@ManyToMany
 	//private List<User> userList;
 	
-	public Long getEventsId() {
+	
+	public Long getEventId() {
 		return eventId;
 	}
-	public void setEventsId(Long eventsId) {
-		this.eventId = eventsId;
+	public void setEventId(Long eventId) {
+		this.eventId = eventId;
+	}
+	public String getUniversity() {
+		return university;
+	}
+	public void setUniversity(String university) {
+		this.university = university;
 	}
 	public String getPhotoUrl() {
 		return photoUrl;
@@ -72,11 +80,6 @@ public class EventsEntity {
 	public void setBusiness(String business) {
 		this.business = business;
 	}
-//	public List<User> getUserList() {
-//		return userList;
-//	}
-//	public void setUserList(List<User> userList) {
-//		this.userList = userList;
-//	}
+		
 	
 }

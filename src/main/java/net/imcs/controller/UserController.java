@@ -77,11 +77,11 @@ public class UserController {
 		return userService.updateUser(userModel);
 	}
 	
-	@PostMapping("/update")
-	public ResponseEntity<UserModel> editUserAgreements(@RequestBody UserModel userModel){
-		//userService.saveUser(userModel);
-		return userService.updateUser(userModel);
-	}
+//	@PostMapping("/update")
+//	public ResponseEntity<UserModel> editUserAgreements(@RequestBody UserModel userModel){
+//		//userService.saveUser(userModel);
+//		return userService.updateUser(userModel);
+//	}
 	
 	//http://localhost:8080/user/stablishPhotoUrl
 	/*

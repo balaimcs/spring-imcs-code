@@ -25,7 +25,8 @@ public class EventsConverter {
 	public EventsEntity modelToEntity(EventsModel eventsModel) {
 		EventsEntity eventsEntity= new EventsEntity();
 	
-		eventsEntity.setEventsId(eventsModel.getEventsId());
+		eventsEntity.setEventId(eventsModel.getEventId());
+		eventsEntity.setUniversity(eventsModel.getUniversity());
 		eventsEntity.setPhotoUrl(eventsModel.getPhotoUrl());
 		eventsEntity.setDisclaimer(eventsModel.getDisclaimer());
 		eventsEntity.setTermsAndConditions(eventsModel.getTermsAndConditions());
@@ -38,7 +39,8 @@ public class EventsConverter {
 	public EventsModel entityToModel(EventsEntity eventsEntity) {
 		EventsModel eventsModel = new EventsModel();
 		
-		eventsModel.setEventsId(eventsEntity.getEventsId());
+		eventsModel.setEventId(eventsEntity.getEventId());
+		eventsModel.setUniversity(eventsEntity.getUniversity());
 		eventsModel.setPhotoUrl(eventsEntity.getPhotoUrl());
 		eventsModel.setDisclaimer(eventsEntity.getDisclaimer());
 		eventsModel.setTermsAndConditions(eventsEntity.getTermsAndConditions());

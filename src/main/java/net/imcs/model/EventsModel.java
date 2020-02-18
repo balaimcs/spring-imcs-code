@@ -7,7 +7,8 @@ import net.imcs.entity.User;
 
 public class EventsModel {
 
-	private Long eventsId;
+	private Long eventId;
+	private String university;
 	private String photoUrl;
 	private String disclaimer;
 	private String termsAndConditions;
@@ -15,14 +16,21 @@ public class EventsModel {
 	
 //	private List<User> userList= new ArrayList<User>();
 	
-	public Long getEventsId() {
-		return eventsId;
-	}
-	public void setEventsId(Long eventsId) {
-		this.eventsId = eventsId;
-	}
+	
 	public String getPhotoUrl() {
 		return photoUrl;
+	}
+	public Long getEventId() {
+		return eventId;
+	}
+	public void setEventId(Long eventId) {
+		this.eventId = eventId;
+	}
+	public String getUniversity() {
+		return university;
+	}
+	public void setUniversity(String university) {
+		this.university = university;
 	}
 	public void setPhotoUrl(String photoUrl) {
 		this.photoUrl = photoUrl;
